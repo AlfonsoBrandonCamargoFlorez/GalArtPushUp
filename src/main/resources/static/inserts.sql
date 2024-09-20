@@ -20,6 +20,7 @@ INSERT INTO estado_persona (descripcion) VALUES ('Inactivo');
 -- Inserciones en la tabla genero
 INSERT INTO genero (nombre) VALUES ('Masculino');
 INSERT INTO genero (nombre) VALUES ('Femenino');
+INSERT INTO genero (nombre) VALUES ('LGBTIQ+XYZ');
 
 -- Inserciones en la tabla persona
 INSERT INTO persona (nombre, apellido, email, fecha_nacimiento, genero_id, estado_persona_id)

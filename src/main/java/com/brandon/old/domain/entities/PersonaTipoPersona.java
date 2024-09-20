@@ -17,6 +17,8 @@ public class PersonaTipoPersona {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
+    
+
     @ManyToOne
     private Persona persona;
 

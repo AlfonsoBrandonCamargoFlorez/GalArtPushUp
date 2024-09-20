@@ -17,6 +17,8 @@ public class DetalleTransaccion {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
+    
+
     @ManyToOne
     private Antiguedades antiguedades;
 

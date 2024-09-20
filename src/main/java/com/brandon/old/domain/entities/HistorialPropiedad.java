@@ -1,11 +1,15 @@
 package com.brandon.old.domain.entities;
 
+import java.util.Date;
+
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
 import jakarta.persistence.JoinColumn;
 import jakarta.persistence.ManyToOne;
+import jakarta.persistence.Temporal;
+import jakarta.persistence.TemporalType;
 import lombok.Getter;
 import lombok.Setter;
 
@@ -14,6 +18,7 @@ import lombok.Setter;
 
 @Entity
 public class HistorialPropiedad {
+
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
@@ -21,7 +26,8 @@ public class HistorialPropiedad {
     @ManyToOne
     private Antiguedades antiguedades;
 
-    
+    @Temporal(TemporalType.DATE)
+    private Date fechaMovimiento;
 
     @ManyToOne
     @JoinColumn(name = "ActualPropietarioId")

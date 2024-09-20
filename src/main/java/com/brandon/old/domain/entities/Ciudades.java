@@ -18,7 +18,7 @@ public class Ciudades {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
-    @Column(columnDefinition = "VARCHAR(255)", nullable = false, unique = true)
+    @Column(columnDefinition = "VARCHAR(100)", nullable = false)
     private String nombre;
     
     @ManyToOne
